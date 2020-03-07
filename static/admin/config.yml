@@ -4,6 +4,8 @@ backend:
   branch: master
   repo: jonthornton15/pro-gatsby-2
 
+site_url: https://hopeful-wilson-30e011.netlify.com
+
 media_folder: static/img
 public_folder: /img
 
