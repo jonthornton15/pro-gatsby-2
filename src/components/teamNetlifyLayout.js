@@ -18,7 +18,7 @@ class teamNetlifyLayout extends React.Component {
         <h1>{markdownRemark.frontmatter.title}</h1>
         <div
           dangerouslySetInnerHTML={{
-            __html: markdownRemark.bio,
+            __html: markdownRemark.frontmatter.bio,
           }}
         />
       </Layout>
