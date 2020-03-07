@@ -6,7 +6,8 @@ const LISTING_QUERY = graphql`
   query ArchiveQueryListing {
     allMarkdownRemark(
       limit: 10
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: [DESC], fields: [frontmatter___date] }
+      filter: { frontmatter: { slug: { ne: null } } }
     ) {
       totalCount
       edges {

@@ -7,7 +7,8 @@ const POST_ARCHIVE_QUERY = graphql`
   query ArchiveQuery {
     allMarkdownRemark(
       limit: 5
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: [DESC], fields: [frontmatter___date] }
+      filter: { frontmatter: { slug: { ne: null } } }
     ) {
       totalCount
       edges {

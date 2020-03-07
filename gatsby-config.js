@@ -38,6 +38,14 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
+    // Adding Netlify content to filesystem to use graphql on
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `team`,
+        path: `${__dirname}/src/team/`,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify`,
