@@ -3,6 +3,8 @@ backend:
   name: github
   branch: master
   repo: jonthornton15/pro-gatsby-2
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 site_url: https://hopeful-wilson-30e011.netlify.com
 
